@@ -140,3 +140,65 @@
 .submit:hover {
   background: #2f4a18;
 }
+
+.dividerContainer {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+.orText {
+  padding: 0 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.socialButtons {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.socialButton {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.socialIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.bottomText {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
