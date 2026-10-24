@@ -3,14 +3,31 @@
   grid-template-columns: 42.5% 57.5%;
   height: 100vh;
   background: #ffffff;
-  font-family: 'Inter', sans-serif;
 }
 
 .left {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  padding: 20vh 40px 40px;.left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   padding: 20vh 40px 40px;
+}
+
+.content {
+  width: 100%;
+  max-width: 400px;
+}
+
+.title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000000;
+}
 }
 
 .content {
@@ -30,6 +47,8 @@
   position: relative;
   height: 100vh;
   overflow: hidden;
+  background: lightblue; /* temporary, remove after testing */
+  .right { background: lightblue; }
 }
 
 .blossom {
@@ -39,4 +58,85 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.title {
+  margin: 0 0 32px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.input {
+  height: 44px;
+  padding: 0 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: #b3b3b3;
+}
+
+.input:focus {
+  outline: 2px solid #3a5a1e;
+  outline-offset: 1px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0 20px;
+  font-size: 13px;
+}
+
+.checkbox input {
+  width: 16px;
+  height: 16px;
+  accent-color: #3a5a1e;
+}
+
+.underline {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.submit {
+  height: 46px;
+  border: none;
+  border-radius: 8px;
+  background: #3a5a1e;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #2f4a18;
 }
