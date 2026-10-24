@@ -1,7 +1,7 @@
 import styles from './Login.module.css'
-import blossom from "../../assets/blossom-flower.svg";
-import googleLogo from "../../assets/icons-google-logo.svg";
-import appleLogo from "../../assets/icons-apple-logo.svg";
+import blossom from '../../assets/blossom-flower.svg'
+import googleLogo from '../../assets/icons-google-logo.svg'
+import appleLogo from '../../assets/icons-apple-logo.svg'
 
 function Login() {
   return (
@@ -9,12 +9,11 @@ function Login() {
       {/* LEFT SECTION */}
       <section className={styles.left}>
         <div className={styles.content}>
-          {/* Part 1: Title & Subtitle */}
           <h1 className={styles.title}>Welcome back!</h1>
           <p className={styles.subtitle}>Enter your Credentials to access your account</p>
 
           <form className={styles.form}>
-            {/* Part 2: Form (No Name field, added forgot password link) */}
+            {/* Email Field */}
             <div className={styles.field}>
               <label htmlFor="email" className={styles.label}>Email address</label>
               <input
@@ -25,28 +24,31 @@ function Login() {
               />
             </div>
 
+            {/* Password Field with Forgot Password Link */}
             <div className={styles.field}>
               <div className={styles.passwordHeader}>
                 <label htmlFor="password" className={styles.label}>Password</label>
-                <a href="#" className={styles.forgotPassword}>Forgot password</a>
+                <a href="#" className={styles.forgotPassword}>forgot password</a>
               </div>
               <input
                 id="password"
                 type="password"
-                placeholder="password"
+                placeholder="Enter your password"
                 className={styles.input}
               />
             </div>
 
+            {/* Remember for 30 days Checkbox */}
             <label className={styles.checkbox}>
               <input type="checkbox" />
               <span>Remember for 30 days</span>
             </label>
 
+            {/* Submit Button */}
             <button type="submit" className={styles.submit}>Login</button>
           </form>
 
-          {/* Part 3: Divider and Bottom Section */}
+          {/* DIVIDER AND BOTTOM SECTION */}
           <div className={styles.dividerContainer}>
             <div className={styles.line}></div>
             <span className={styles.orText}>or</span>

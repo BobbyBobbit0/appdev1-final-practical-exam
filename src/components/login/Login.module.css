@@ -225,3 +225,20 @@
 .forgotPassword:hover {
   text-decoration: underline;
 }
+
+.passwordHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.forgotPassword {
+  font-size: 13px;
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
