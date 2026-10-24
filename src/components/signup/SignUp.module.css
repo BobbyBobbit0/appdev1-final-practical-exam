@@ -3,19 +3,33 @@
   grid-template-columns: 42.5% 57.5%;
   height: 100vh;
   background: #ffffff;
+  font-family: 'Inter', sans-serif;
 }
 
 .left {
-  padding: 40px;
-  .left  { background: lightgreen; }
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20vh 40px 40px;
+}
+
+.content {
+  width: 100%;
+  max-width: 400px;
+}
+
+.title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000000;
 }
 
 .right {
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background: lightblue; /* temporary, remove after testing */
-  .right { background: lightblue; }
 }
 
 .blossom {
