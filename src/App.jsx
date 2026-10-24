@@ -1,1 +1,7 @@
-<h1>APPDEV1 Final Project!</h1>
+import SignUp from './components/signup/SignUp'
+
+function App() {
+  return <SignUp />
+}
+
+export default App
